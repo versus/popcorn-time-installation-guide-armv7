@@ -1,6 +1,6 @@
 # Popcorn time instalation for ARMv7 (Odroid-U3|Ubuntu 14.04.2)
 
-This is an experimental build for Odroid-U3. I never tried it on other device, so I would really appreciate some feedbacks!
+This is an experimental build for Odroid-U3. I never tried on other devices, so I would really appreciate feedback!
 Some videos/audios can't be decoded yet due to lack of codecs on nwjs. 
 
 ### Instalation guide
