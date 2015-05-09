@@ -20,7 +20,7 @@ fi
 
 #Get current architecture
 current="1:Set architecture"
-if [[ $(arch) == "armv7l" ]] ; then
+if [[ $(arch) == "armv*" ]] ; then
 	arch="armv7l" && error=0
 else
 	error=1
