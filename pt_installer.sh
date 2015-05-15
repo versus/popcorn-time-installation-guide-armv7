@@ -76,6 +76,12 @@ echo "
 - Creating new configuration files..."
 
 current="4:Desktop file"
+
+if [[ ! test -d "$HOME/.local/share/applications" ]]
+then
+	mkdir -p "$HOME/.local/share/applications"
+fi
+
 echo "[Desktop Entry]
 Comment=Watch Movies and TV Shows instantly
 Name=Popcorn Time
