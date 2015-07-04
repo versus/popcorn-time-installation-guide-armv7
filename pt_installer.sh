@@ -77,7 +77,7 @@ echo "
 
 current="4:Desktop file"
 
-if [[ ! test -d "$HOME/.local/share/applications" ]]
+if [[ ! -d "$HOME/.local/share/applications" ]]
 then
 	mkdir -p "$HOME/.local/share/applications"
 fi
