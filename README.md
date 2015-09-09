@@ -68,3 +68,8 @@ https://schnouki.net/posts/2014/12/12/openvpn-for-a-single-application-on-linux/
 
   - Configuration files and databases:
     - Delete ~/.config/Popcorn-Time
+
+### Known issues
+- It doesn't work on Chromebook!
+- .torrent files are not loaded.
+
