@@ -71,5 +71,5 @@ https://schnouki.net/posts/2014/12/12/openvpn-for-a-single-application-on-linux/
 
 ### Known issues
 - It doesn't work on Chromebook!
-- .torrent files are not loaded.
+- it does not load .torrent files.
 
