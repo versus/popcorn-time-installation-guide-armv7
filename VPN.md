@@ -1,4 +1,6 @@
-# VPN just for pocorntime
+### VPN just for pocorntime
+
+(Thanks to gripped!)
 
 If you want to use a different vpn than the integrated vpn.ht but have other programs still use the standard connection there is a great guide here.
 
