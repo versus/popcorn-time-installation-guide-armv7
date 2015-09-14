@@ -1,19 +1,15 @@
-# Popcorn time instalation for ARMv7 (Ubuntu 14.04.2)
+# Popcorn time instalation guide for ARMv7
 
-This is an experimental build for Odroid-U3. I only tried it on Odroid U3 and XU4!
-Some videos/audios can't be decoded yet due to lack of codecs on nwjs. 
+This is an experimental build for Odroid-U3 and Odroid-XU4.
+Some videos/audios can't be decoded yet due to lack of codecs on nw.js. 
 
 ### Instalation guide
-  - Download files:
-     - Popcorn-Time.tar.gz
-     - pt_installer.sh
-  - (optional) Move downloaded files to the same folder
+  - Clone the repository and change into directory:
+  - (optional) chmod +x pt_installer.sh
   - Run pt_installer.sh from terminal with sudo privileges
-  - Run Popcorn Time 
-  - Eat popcorn!
 
 ### Kodi as External player
-(Obviously you need a working kodi !)
+(Obviously you need a working kodi! NB.: Since v0.3.8-5 kodi was added as external player, so you don't have to recompile!)
 
 To get it to work you first need to go into the popcorn time settings and set it to always stream on the same port. 
 I chose 51234
@@ -71,5 +67,8 @@ https://schnouki.net/posts/2014/12/12/openvpn-for-a-single-application-on-linux/
 
 ### Known issues
 - It doesn't work on Chromebook!
-- it does not load .torrent files.
+- It does not load .torrent files.
 
+### Link to article in Odroid Magazine:
+
+http://magazine.odroid.com/assets/201507/pdf/ODROID-Magazine-201507.pdf

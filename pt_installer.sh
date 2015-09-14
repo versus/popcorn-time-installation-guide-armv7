@@ -6,8 +6,7 @@ func_error() {
 echo "
 Unexpected Error:
 =================
-at: $current
-... Please try again."
+at: $current"
 exit 1 
 }
 
@@ -21,7 +20,7 @@ fi
 #Get current architecture
 current="1:Set architecture"
 if [[ $(arch) == "armv7"* ]] ; then
-	arch="arm" && error=0
+	arch=$(arch) && error=0
 else
 	error=1
 fi
@@ -33,7 +32,7 @@ tos="https://popcorntime.io/tos"
 #Disclaimer
 clear
 echo "
-Popcorn Time Linux $arch 
+Popcorn-Time Linux $arch 
 ==================================
 
 Please read our Terms of service:
@@ -50,7 +49,7 @@ The Terms of Service haven't been accepted." && exit 0 ; fi ; }
 #if agreed, start install
 clear
 echo "
-Popcorn Linux $arch
+Popcorn-Time Linux $arch
 =================================="
 
 #download in temp and install in home
@@ -58,13 +57,14 @@ current="2:Copy archive"
 echo "
 - Please wait...
 "
-cp Popcorn-Time.tar.gz /tmp/popcorntime.tar.gz 
+# cp Popcorn-Time.tar.gz /tmp/popcorntime.tar.gz 
 
 
 #extract archive
 current="3:Extract archive"
 mkdir -p "$HOME/.Popcorn-Time"
-tar -xf /tmp/popcorntime.tar.gz -C /tmp --overwrite --preserve-permissions && error=0 || error=1
+mkdir /tmp/Popcorn-Time
+tar -xf Popcorn-Time-0.3.8-5-Linux-arm.tar.xz -C /tmp/Popcorn-Time --overwrite --preserve-permissions && error=0 || error=1
 cp /tmp/Popcorn-Time/* "$HOME/.Popcorn-Time" &> /dev/null && error=0 || error=1
 func_error
 
@@ -85,7 +85,7 @@ fi
 echo "[Desktop Entry]
 Comment=Watch Movies and TV Shows instantly
 Name=Popcorn Time
-Exec=$HOME/.Popcorn-Time/Popcorn-Time --use-gl=egl
+Exec=$HOME/.Popcorn-Time/Popcorn-Time --use-gl=egl --ignore-gpu-blacklist --disable-accelerated-2d-canvas --num-raster-threads=2
 Icon=$HOME/.Popcorn-Time/icon.png
 MimeType=application/x-bittorrent;x-scheme-handler/magnet;
 StartupNotify=false
