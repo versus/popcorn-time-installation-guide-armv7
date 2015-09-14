@@ -10,7 +10,7 @@ This is an experimental build for Odroid-U3 and Odroid-XU4.
 ### Instalation guide
 - Clone the repository and open a terminal after change into the directory directory:
 - Run `chmod +x pt_installer.sh`
-- Run `sudo pt_installer.sh`
+- Run `sudo ./pt_installer.sh`
 
 ### Uninstalation guide
 - Main application:
