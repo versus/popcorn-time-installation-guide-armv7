@@ -2,9 +2,11 @@
 
 This is an experimental build for Odroid-U3 and Odroid-XU4.
 
+THIS GUIDE WILL NOT WORK BECAUSE THE POPCORN TIME PROJECT IS NOT AVAILABLE ANYMORE AT `https://git.popcorntime.io/popcorntime/desktop.git`
+
 ### Known issues
 - It doesn't work on Chromebook!
-- It does not load .torrent files.
+- ~~It does not load .torrent files.~~
 - Some videos/audios can't be decoded yet due to lack of codecs on nw.js.
 
 ### Instalation guide
