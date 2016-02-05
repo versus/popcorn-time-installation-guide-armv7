@@ -66,6 +66,7 @@ mkdir -p "$HOME/.Popcorn-Time"
 mkdir /tmp/Popcorn-Time
 tar -xf Popcorn-Time-0.3.8-5-Linux-arm.tar.xz -C /tmp/Popcorn-Time --overwrite --preserve-permissions && error=0 || error=1
 cp /tmp/Popcorn-Time/* "$HOME/.Popcorn-Time" &> /dev/null && error=0 || error=1
+rm -r /tmp/Popcorn-Time/
 func_error
 
 #download icon and install in home
